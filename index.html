@@ -8,35 +8,41 @@
 </head>
 <body>
   <header>
-    <h1>DailyBoost</h1>
-    <p>Boost your productivity every day!</p>
+    <div class="container">
+      <h1>DailyBoost</h1>
+      <p>Boost your productivity every day!</p>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <!-- Pomodoro Timer -->
     <section id="pomodoro">
       <h2>Pomodoro Timer</h2>
-      <div>
+      <div class="timer-controls">
         <button id="start-timer">Start</button>
         <button id="pause-timer">Pause</button>
         <button id="reset-timer">Reset</button>
-        <p id="timer-display">25:00</p>
       </div>
+      <p id="timer-display">25:00</p>
     </section>
 
     <!-- To-Do List -->
     <section id="todo-list">
       <h2>To-Do List</h2>
-      <input type="text" id="new-task" placeholder="Add a new task">
-      <button id="add-task">Add Task</button>
+      <div class="input-group">
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button id="add-task">Add Task</button>
+      </div>
       <ul id="task-list"></ul>
     </section>
 
     <!-- Goal Tracker -->
     <section id="goal-tracker">
       <h2>Goal Tracker</h2>
-      <input type="text" id="new-goal" placeholder="Set a goal">
-      <button id="add-goal">Add Goal</button>
+      <div class="input-group">
+        <input type="text" id="new-goal" placeholder="Set a goal">
+        <button id="add-goal">Add Goal</button>
+      </div>
       <ul id="goal-list"></ul>
     </section>
 
@@ -48,8 +54,12 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2023 DailyBoost. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2023 DailyBoost. All rights reserved.</p>
+      <p>Made with ❤️ by You</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
