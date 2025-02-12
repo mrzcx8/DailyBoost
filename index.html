@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyBoost</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DailyBoost</h1>
+    <p>Boost your productivity every day!</p>
+  </header>
+
+  <main>
+    <!-- Pomodoro Timer -->
+    <section id="pomodoro">
+      <h2>Pomodoro Timer</h2>
+      <div>
+        <button id="start-timer">Start</button>
+        <button id="pause-timer">Pause</button>
+        <button id="reset-timer">Reset</button>
+        <p id="timer-display">25:00</p>
+      </div>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todo-list">
+      <h2>To-Do List</h2>
+      <input type="text" id="new-task" placeholder="Add a new task">
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Goal Tracker -->
+    <section id="goal-tracker">
+      <h2>Goal Tracker</h2>
+      <input type="text" id="new-goal" placeholder="Set a goal">
+      <button id="add-goal">Add Goal</button>
+      <ul id="goal-list"></ul>
+    </section>
+
+    <!-- Inspirational Quotes -->
+    <section id="quotes">
+      <h2>Inspirational Quotes</h2>
+      <button id="generate-quote">Generate Quote</button>
+      <p id="quote-display">Click the button to get inspired!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 DailyBoost. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
